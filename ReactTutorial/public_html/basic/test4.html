@@ -15,10 +15,21 @@
             var FirstComponent = React.createClass({
                 
                 render: function (){
-                    return (<h2> This is a simple component</h2>);
+                    return (
+                           <div>
+                            <h2> This is a simple component</h2>
+                            <p>I am some sample text</p>
+                            </div>
+                    );
                 }
             });
-            ReactDOM.render(<FirstComponent /> ,document.getElementById('example')
+            ReactDOM.render(
+                    <div>
+                    <FirstComponent /> 
+                    <FirstComponent />
+                    <FirstComponent />
+                    </div>
+                    ,document.getElementById('example')
             );
         </script>
     </body>
